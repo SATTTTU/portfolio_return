@@ -1,5 +1,11 @@
 {
-  "name": "3dfolio",
+  "name": "satish-portfolio",
+  "description": "A portfolio website showcasing projects, skills, and experiences.",
+  "author": "Satish Timalsina",
+  "license": "MIT",
+  "repository": {
+    "type": "git"
+  },
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -12,12 +18,13 @@
     "@emailjs/browser": "^3.10.0",
     "@react-three/drei": "^9.56.24",
     "@react-three/fiber": "^8.11.1",
+    "caniuse-lite": "^1.0.30001726",
     "framer-motion": "^9.0.7",
     "maath": "^0.5.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-parallax-tilt": "^1.7.299",
     "react-router-dom": "^6.8.1",
-    "react-tilt": "^0.1.4",
     "react-vertical-timeline-component": "^3.6.0",
     "three": "^0.149.0"
   },

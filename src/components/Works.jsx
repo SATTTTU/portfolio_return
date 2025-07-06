@@ -1,5 +1,5 @@
 import React from "react";
-import Tilt from "react-tilt";
+import Tilt from "react-parallax-tilt";
 import { motion } from "framer-motion";
 
 import { styles } from "../styles";
@@ -19,12 +19,11 @@ const ProjectCard = ({
   return (
     <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
       <Tilt
-        options={{
-          max: 45,
-          scale: 1,
-          speed: 450,
-        }}
-        className='bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full'
+        tiltMaxAngleX={45}
+        tiltMaxAngleY={45}
+        scale={1}
+        transitionSpeed={450}
+        className='bg-tertiary p-5 rounded-2xl w-full sm:w-[300px] md:w-[340px] lg:w-[360px]'
       >
         <div className='relative w-full h-[230px]'>
           <img
@@ -71,7 +70,7 @@ const Works = () => {
   return (
     <>
       <motion.div variants={textVariant()}>
-        <p className={`${styles.sectionSubText} `}>My work</p>
+        <p className={`${styles.sectionSubText}`}>My work</p>
         <h2 className={`${styles.sectionHeadText}`}>Projects.</h2>
       </motion.div>
 
@@ -88,10 +87,23 @@ const Works = () => {
         </motion.p>
       </div>
 
-      <div className='mt-20 flex flex-wrap gap-7'>
+      {/* Projects Grid */}
+      <div className='mt-20 flex flex-wrap justify-center gap-7'>
         {projects.map((project, index) => (
           <ProjectCard key={`project-${index}`} index={index} {...project} />
         ))}
+      </div>
+
+      {/* GitHub Button */}
+      <div className='mt-10 flex justify-center'>
+        <a
+          href='https://github.com/SATTTTU'
+          target='_blank'
+          rel='noopener noreferrer'
+          className='bg-[#333] hover:bg-[#555] text-white py-3 px-6 rounded-lg font-semibold transition-all duration-300'
+        >
+          See My Other Projects on GitHub
+        </a>
       </div>
     </>
   );
