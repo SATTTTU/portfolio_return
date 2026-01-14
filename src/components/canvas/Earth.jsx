@@ -18,8 +18,8 @@ const EarthCanvas = () => {
     <Canvas
       shadows
       frameloop='demand'
-      dpr={[1, 2]}
-      gl={{ preserveDrawingBuffer: true }}
+      dpr={[1, 1.5]}
+      gl={{ preserveDrawingBuffer: false, antialias: false }}
       // --- THE FIX IS HERE ---
       // We are changing the camera position to move it further away.
       camera={{
@@ -27,7 +27,7 @@ const EarthCanvas = () => {
         near: 0.1,
         far: 200,
         // Original was [-4, 3, 6]. We change 6 to 8 to pull the camera back.
-        position: [-4, 3, 8], 
+        position: [-4, 3, 8],
       }}
     >
       <Suspense fallback={<CanvasLoader />}>
