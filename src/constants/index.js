@@ -122,6 +122,49 @@ const technologies = [
   
 ];
 
+const techStack = [
+  {
+    title: "Languages",
+    items: ["Python", "JavaScript", "TypeScript", "C#"],
+  },
+  {
+    title: "Frontend",
+    items: ["React", "Next.js", "Angular", "Three.js"],
+  },
+  {
+    title: "Backend",
+    items: [".NET", "Django", "Node.js", "Flask", "ABP Framework"],
+  },
+  {
+    title: "Data & ML",
+    items: ["TensorFlow", "NumPy", "Matplotlib"],
+  },
+  {
+    title: "Messaging",
+    items: ["RabbitMQ", "gRPC"],
+  },
+  {
+    title: "Caching",
+    items: ["Redis"],
+  },
+  {
+    title: "Databases",
+    items: ["PostgreSQL", "MongoDB", "MySQL"],
+  },
+  {
+    title: "ORM / Query",
+    items: ["Prisma", "Dapper", "Entity Framework"],
+  },
+  {
+    title: "DevOps & Infra",
+    items: ["Docker", "Jenkins", "Portainer"],
+  },
+  {
+    title: "Tools",
+    items: ["Git", "VS Code", "Visual Studio", "DBeaver", "Prettier", "Figma"],
+  },
+];
+
 const experiences = [
   {
     title: "Frontend  Developer",
@@ -141,7 +184,7 @@ const experiences = [
     company_name: "Upwork",
     icon: shopify,
     iconBg: "#383E56",
-    date: "Janaury 2024 - April 2025",
+    date: "August 2025 - Present",
     points: [
       "Designing and developing end-to-end full-stack web applications for diverse client needs",
       "Managing entire project lifecycle – from requirement gathering to deployment",
@@ -149,7 +192,32 @@ const experiences = [
       " Building secure, scalable, and real-time backend systems",
     ],
   },
- 
+  {
+    title: "Junior Fullstack Developer (MERN & Next.js)",
+    company_name: "Personal & Freelance Projects",
+    icon: tesla,
+    iconBg: "#232931",
+    date: "June 2025 - August 2025",
+    points: [
+      "Developing fullstack web applications using MongoDB, Express.js, React, and Node.js.",
+      "Building SEO-friendly and performant frontends with Next.js and modern UI libraries.",
+      "Implementing authentication, authorization, and RESTful APIs for production-ready apps.",
+      "Collaborating with designers and stakeholders to deliver user-centric experiences.",
+    ],
+  },
+  {
+    title: "Associate Fullstack Developer (.NET & Angular)",
+    company_name: "Personal & Freelance Projects",
+    icon: meta,
+    iconBg: "#1f2833",
+    date: "August 2025 - Present",
+    points: [
+      "Building scalable backend services using ASP.NET Core and clean architecture principles.",
+      "Creating responsive, component-based frontends with Angular and TypeScript.",
+      "Integrating SQL/NoSQL databases and optimizing queries for performance and reliability.",
+      "Implementing role-based access control, validation, and error handling across the stack.",
+    ],
+  },
 ];
 
 const testimonials = [
@@ -296,4 +364,4 @@ const projects = [
 
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+export { services, technologies, techStack, experiences, testimonials, projects };
